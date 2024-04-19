@@ -50,6 +50,7 @@ font-size: 50px;
 .num1 img {
     display: inline-block;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 
@@ -67,6 +68,7 @@ margin: 0 auto;
 .num2 img{
     width: 40px;
     margin-left: 455px;
+    cursor: pointer;
 }
 .num2 h2, 
 .num2 img{
@@ -82,6 +84,7 @@ margin: 0 auto;
 .num3 img{
     width: 40px;
     margin-left: 137px;
+    cursor: pointer;
 
 }
 .num3 h2, 
@@ -97,6 +100,7 @@ margin: 0 auto;
 .num4 img{
     width: 40px;
     margin-top: 10px;
+    cursor: pointer;
 }
 .num4 h2, 
 .num4 img{
