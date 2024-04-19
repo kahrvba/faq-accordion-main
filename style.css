@@ -4,7 +4,8 @@ font-family: "Work Sans";
 font-size: 16px;
 }
 img{
-    width: 100%; 
+    width: 100%;
+    height: auto; 
 }
 .container{
    max-width: 850px;
@@ -130,4 +131,30 @@ margin: 0 auto;
     color: gray;
     margin-top: 20px;
     margin-left: 20px;
+}
+@media screen and (min-width: 768px){
+
+    .desktop {
+        display: block;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+
+    main {
+      width: 32.5em;
+      position: absolute;
+      right: 50%;
+      left: 30%;
+      top: 15%;
+      box-shadow: 0 1.5rem 1rem -1rem rgb(154, 150, 150, 0.5);  
+      
+    }
+
+    .plus-minus {
+        padding-right: 1em;
+    }
+
+    .mobile-background {
+        display: none;
+    }
 }
