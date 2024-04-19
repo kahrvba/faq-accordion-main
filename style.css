@@ -140,7 +140,7 @@ margin: 0 auto;
         background-repeat: no-repeat;
     }
 
-    main {
+    .container {
       width: 32.5em;
       position: absolute;
       right: 50%;
@@ -150,11 +150,9 @@ margin: 0 auto;
       
     }
 
-    .plus-minus {
+    .toggle-icon {
         padding-right: 1em;
     }
 
-    .mobile-background {
-        display: none;
-    }
+
 }
