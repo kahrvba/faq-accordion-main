@@ -3,9 +3,11 @@ background-color:  hsl(275, 100%, 97%);
 font-family: "Work Sans";
 font-size: 16px;
 }
+
 img{
     width: 100%;
     height: auto; 
+    
 }
 .container{
    max-width: 850px;
@@ -131,4 +133,24 @@ margin: 0 auto;
     color: gray;
     margin-top: 20px;
     margin-left: 20px;
+}
+.attribution a{
+    text-decoration: none;
+}
+@media screen and (max-width:375px){
+    .container{
+        position:relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .container{
+        width: 100%;
+        margin-top: 350px;
+    }
+    .FAQ{
+        gap: 30px;
+    }
+   
+   
 }
