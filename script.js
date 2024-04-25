@@ -1,36 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const toggleIcons = document.querySelectorAll('.toggle-icon');
+  const accordionContainer = document.querySelector('.accordion-container');
 
-  toggleIcons.forEach(toggleIcon => {
-    toggleIcon.addEventListener('click', () => {
+  accordionContainer.addEventListener('click', (event) => {
+    if (event.target.classList.contains('toggle-icon')) {
+      const toggleIcon = event.target;
+      const hiddenParagraph = toggleIcon.nextElementSibling;
+
       toggleIcon.src = toggleIcon.src.includes('plus')
         ? './assets/images/icon-minus.svg'
         : './assets/images/icon-plus.svg';
-
-      const hiddenParagraph = toggleIcon.nextElementSibling;
-
-      if (hiddenParagraph.style.display === 'none' || hiddenParagraph.style.display === '') {
-        hiddenParagraph.style.display = 'block';
-      } else {
-        hiddenParagraph.style.display = 'none';
-      }
-    });
-  });
-});
-
-// Alternative version using classList toggle and dataset attributes
-document.addEventListener('DOMContentLoaded', () => {
-  const toggleIcons = document.querySelectorAll('.toggle-icon');
-
-  toggleIcons.forEach(toggleIcon => {
-    toggleIcon.addEventListener('click', () => {
-      toggleIcon.src = toggleIcon.src.includes('plus')
-        ? './assets/images/icon-minus.svg'
-        : './assets/images/icon-plus.svg';
-
-      const hiddenParagraph = toggleIcon.nextElementSibling;
 
       hiddenParagraph.classList.toggle('hidden');
-    });
+    }
   });
 });
+
+
+<div class="accordion-container">
+  <div class="accordion-item">
+    <img class="toggle-icon" src="./assets/images/icon-plus.svg" data-state="collapsed" alt="Toggle">
+    <h3 class="question">How many team members can I invite?</h3>
+    <p class="answer hidden" data-target="question-1">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+  </div>
+  <!-- More accordion items... -->
+</div>
