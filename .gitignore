@@ -2,7 +2,127 @@
 # to version control. The following file types and directories will be ignored by git.
 
 # Design files
-*.sketch
+# ----------------------------------
+
+# Figma
 *.fig
+
+# Sketch
+*.sketch
+
+# Adobe XD
 *.xd
 
+# Axure RP
+*.rp
+
+# InVision Studio
+*.vsd
+*.vss
+*.vsp
+
+# SVG files
+*.svg
+
+# Font files
+/fonts/
+
+# Image files
+/images/
+
+# Audio files
+*.aiff
+*.wav
+*.mp3
+
+# Video files
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Archive files
+*.zip
+*.rar
+*.7z
+*.gz
+*.tar
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+
+# Backup files
+*~
+
+# VS Code files
+.vscode/
+
+# Thumbs.db files (Windows)
+Thumbs.db
+
+# .DS_Store files (Mac)
+.DS_Store
+
+# Gradle files
+.gradle/
+
+# Maven files
+.m2/
+
+# NPM files
+node_modules/
+
+# Yarn files
+yarn-lock.json
+yarn-error.log
+
+# PyCharm files
+.idea/
+
+# IntelliJ IDEA files
+.idea/
+
+# Android Studio files
+.idea/
+.gradle/
+
+# Eclipse files
+.metadata/
+
+# Visual Studio files
+.vs/
+
+# NuGet files
+*.suo
+*.sln.ide
+*.user
+*.cache
+
+# Rider files
+.idea/
+
+# RubyMine files
+.idea/
+
+# WebStorm files
+.idea/
+
+# Data files
+/data/
+
+# Config files
+/config/
+
+# Logs files
+/logs/
+
+# Temp files
+/temp/
+
+# Backup files
+/backup/
+
+#
